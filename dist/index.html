@@ -8,7 +8,82 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo fz-22">
+                    <a href="#">LOGO</a>
+                </div>
+                <div class="header__buttons">
+                    <button class="header__btn">
+                        <img src="./assets/icons/person.svg" alt="person_icon">
+                    </button>
+                    <button class="header__btn">
+                        <img src="./assets/icons/favorite.svg" alt="favorite_icon">
+                    </button>
+                    <button class="header__btn">
+                        <img src="./assets/icons/bag.svg" alt="bag_icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="product">
+        <div class="container">
+            <div class="product__wrapper">
+                <div class="product__photo">
+                    <img src="./assets/img/girl.jpg" alt="girl">
+                </div>
+                <div class="product__block">
+                    <div class="product__name">
+                        <h1 class="product__title fz-18">
+                            Пижама для девочек
+                        </h1>
+                        <div class="product__art fz-12">Арт. 02765/46</div>
+                        <div class="product__reviews">
+                            <div class="product__feedback fz-14">Отзывы</div>
+                            <div class="product__rating">
+                                <img src="./assets/icons/stars.svg" alt="star">
+                            </div>
+                            <div class="fz-14">14 отзывов</div>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="product__price">
+                        <div class="product__items">
+                            <div class="product__sum fz-24">
+                                800 ₽ <span>1 500 ₽</span>
+                            </div>
+                            <span></span>
+                        </div>
+                        <div class="product__items">
+                            <div class="product__discount fz-12">скидка -36%</div>
+                            <div class="product__discount fz-12">акция -20%</div>
+                        </div>
+                    </div>
+                    <div class="product__parametrs">
+                        <div class="product__select">
+                            <select name="#" id="#">
+                                <option value="1">Выбрать размер</option>
+                            </select>
+                        </div>
+                        <div class="product__parametrs">
+                            <a href="#" class="fz-14 product__size">Определить размер</a>
+                        </div>
+                    </div>
+                    <div class="product__buttons">
+                        <div class="product__item">
+                            <button id="btn-plus" class="product__btn">+</button>
+                            <button id="btn-value" class="product__btn">1</button>
+                            <button id="btn-minus" class="product__btn">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <script src="js/script.js"></script>
 </body>
 </html>

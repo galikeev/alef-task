@@ -90,10 +90,45 @@
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _modules_goodsCounter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/goodsCounter */ "./src/js/modules/goodsCounter.js");
 
+window.addEventListener('DOMContentLoaded', () => {
+  'use strict';
+
+  Object(_modules_goodsCounter__WEBPACK_IMPORTED_MODULE_0__["default"])();
+});
+
+/***/ }),
+
+/***/ "./src/js/modules/goodsCounter.js":
+/*!****************************************!*\
+  !*** ./src/js/modules/goodsCounter.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const goodsCounter = () => {
+  let count = document.querySelector('#btn-value');
+  let btnPlus = document.querySelector('#btn-plus');
+  let btnMinus = document.querySelector('#btn-minus');
+  btnPlus.addEventListener('click', () => {
+    count.innerHTML++;
+  });
+  btnMinus.addEventListener('click', () => {
+    if (count.innerHTML > 0) {
+      count.innerHTML--;
+    }
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (goodsCounter);
 
 /***/ })
 
