@@ -80,31 +80,49 @@
     &__size {
         text-decoration: underline;
     }
-    &__item {
-        width: 145px;
+    &__buttons {
         display: flex;
+        align-items: center;
+    }
+    &__item {
+        display: flex;
+        margin-right: 12px;
     }
     &__btn {
         border: none;
         background: #efefef;
         padding: 12px;
-        &:nth-child(1) {
-            cursor: pointer;
+        cursor: pointer;
             &:hover {
                 transition: 0.3s all;
                 background: #bbbbbb;
             }
-        }
-        &:nth-child(2) {
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-        &:nth-child(3) {
+        &_big {
             cursor: pointer;
+            background: #333333;
+            color: #fff;
+            margin-right: 4px;
             &:hover {
                 transition: 0.3s all;
-                background: #bbbbbb;
+                background: #0a0a0a;
             }
         }
+        &_favorite {
+            padding: 9px;
+            font-size: 0;
+            &:hover {
+                transition: 0.3s all;
+                background: #d16f6f;
+            }
+        }
+    }
+    &__input {
+        border: none;
+        width: 15px;
+        background: #efefef;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+        outline: none;
     }
 }

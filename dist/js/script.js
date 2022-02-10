@@ -119,11 +119,13 @@ const goodsCounter = () => {
   let btnPlus = document.querySelector('#btn-plus');
   let btnMinus = document.querySelector('#btn-minus');
   btnPlus.addEventListener('click', () => {
-    count.innerHTML++;
+    if (count.value < 50) {
+      count.value++;
+    }
   });
   btnMinus.addEventListener('click', () => {
-    if (count.innerHTML > 0) {
-      count.innerHTML--;
+    if (count.value > 0) {
+      count.value--;
     }
   });
 };
