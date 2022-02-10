@@ -1,0 +1,28 @@
+.header {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    &__wrapper {
+        padding: 8px 0px 12px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        a {
+            color: #000;
+        }
+    }
+    &__buttons {
+        display: flex;
+        align-items: flex-end;
+    }
+    &__btn {
+        cursor: pointer;
+        font-size: 0;
+        border: none;
+        background: none;
+        margin-right: 24px;
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+    }
+}
