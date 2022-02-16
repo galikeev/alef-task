@@ -14,7 +14,7 @@
         padding: 0px 20px;
     }
     &__name {
-        padding: 20px 0;
+        padding: 40px 0 20px 0;
     }
     &__art {
         margin-top: 15px;
@@ -77,9 +77,6 @@
             outline: none;
         }
     }
-    &__size {
-        text-decoration: underline;
-    }
     &__buttons {
         display: flex;
         align-items: center;
@@ -124,5 +121,17 @@
         padding-right: 30px;
         text-align: center;
         outline: none;
+    }
+    &__line {
+        margin-top: 20px;
+        margin-bottom: 24px;
+        width: 100%;
+        border-bottom: 1px solid #C4C4C4;
+    }
+    &__conditions {
+        display: flex;
+        align-items: center;
+        gap: 6.5px;
+        margin-bottom: 12px;
     }
 }

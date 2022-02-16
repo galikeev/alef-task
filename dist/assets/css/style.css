@@ -19,6 +19,14 @@
   color: #333333;
 }
 
+.fz-16 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
 .fz-14 {
   font-size: 14px;
   line-height: 20px;
@@ -59,8 +67,12 @@ li {
 }
 
 .container {
-  width: 1140px;
+  width: 1390px;
   margin: 0 auto;
+}
+
+.link {
+  text-decoration: underline;
 }
 
 .header {
@@ -107,7 +119,7 @@ li {
   padding: 0px 20px;
 }
 .product__name {
-  padding: 20px 0;
+  padding: 40px 0 20px 0;
 }
 .product__art {
   margin-top: 15px;
@@ -170,9 +182,6 @@ li {
   background: #EEF7FE url(../../assets/icons/arrow_down.svg) no-repeat right 15px center;
   outline: none;
 }
-.product__size {
-  text-decoration: underline;
-}
 .product__buttons {
   display: flex;
   align-items: center;
@@ -218,10 +227,78 @@ li {
   text-align: center;
   outline: none;
 }
+.product__line {
+  margin-top: 20px;
+  margin-bottom: 24px;
+  width: 100%;
+  border-bottom: 1px solid #C4C4C4;
+}
+.product__conditions {
+  display: flex;
+  align-items: center;
+  gap: 6.5px;
+  margin-bottom: 12px;
+}
+
+.style__link {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: block;
+  text-align: center;
+}
+.style__wrapper {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 335px);
+  grid-template-rows: repeat(2, 335px);
+  grid-auto-rows: 335px;
+}
+.style__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.style__item_big {
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
+
+.footer__wrapper {
+  padding: 129px 143px 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__title {
+  padding-bottom: 16px;
+}
+.footer__link {
+  display: block;
+  padding-bottom: 8px;
+}
+.footer__link:last-child {
+  padding-bottom: 0;
+}
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.footer__input {
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #C4C4C4;
+}
+.footer__button {
+  border: 1px solid #333333;
+  background: #FFFFFF;
+  width: 150px;
+  height: 36px;
+  align-self: flex-end;
+}
 
 @media (max-width: 1399px) {
   .container {
-    width: 1390px;
+    width: 1320px;
   }
 }
 @media (max-width: 1199px) {
