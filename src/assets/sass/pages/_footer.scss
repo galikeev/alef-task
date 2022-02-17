@@ -1,6 +1,6 @@
 .footer {
     &__wrapper {
-        padding: 129px 143px 70px;
+        padding: 129px 143px 70px 143px;
         display: flex;
         justify-content: space-between;
     }
@@ -25,10 +25,16 @@
         border-bottom: 1px solid #C4C4C4;
     }
     &__button {
+        cursor: pointer;
         border: 1px solid #333333;
         background: #FFFFFF;
         width: 150px;
         height: 36px;
         align-self: flex-end;
+        &:hover {
+            transition: 0.3s all;
+            background: #333333;
+            color: #fff;
+        }
     }
 }
