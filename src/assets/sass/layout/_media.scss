@@ -2,11 +2,22 @@
     .container {
         width: 1320px;
     }
+    .style {
+        &__wrapper {
+            grid-template-columns: repeat(3, 335px);
+            justify-content: center;
+        }
+    }
 }
 
 @media (max-width: 1199px) {
     .container {
         width: 960px;
+    }
+    .style {
+        &__wrapper {
+            grid-template-columns: repeat(2, 335px);
+        }
     }
 }
 
@@ -14,11 +25,24 @@
     .container {
         width: 720px;
     }
+    .style {
+        &__wrapper {
+            grid-template-columns: repeat(4, 183.26px);
+            grid-template-rows: repeat(2, 183.26px);
+            grid-auto-rows: 183.26px;
+            gap: 8px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
     .container {
         width: 540px;
+    }
+    .style {
+        &__wrapper {
+            grid-template-columns: repeat(2, 183.26px);
+        }
     }
 }
 
