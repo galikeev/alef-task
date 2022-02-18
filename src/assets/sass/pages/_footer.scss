@@ -2,6 +2,7 @@
     &__wrapper {
         padding: 129px 143px 70px 143px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
     &__title {

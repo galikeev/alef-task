@@ -14,6 +14,11 @@
     .container {
         width: 960px;
     }
+    .product {
+        &__buttons {
+            gap: 12px;
+        }
+    }
     .style {
         &__wrapper {
             grid-template-columns: repeat(2, 335px);
@@ -33,15 +38,37 @@
             gap: 8px;
         }
     }
+    .footer {
+        &__wrapper {
+            gap: 58px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
     .container {
         width: 540px;
     }
+    .product {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__photo {
+            width: 375px;
+            img {
+                width: 100%;
+            }
+        }
+    }
     .style {
         &__wrapper {
             grid-template-columns: repeat(2, 183.26px);
+        }
+    }
+    .footer {
+        &__wrapper {
+            padding: 30px 20px 186px 20px;
         }
     }
 }
@@ -49,6 +76,5 @@
 @media (max-width: 575px) {
     .container {
         width: 100%;
-        padding: 10px 0;
     }
 }

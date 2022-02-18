@@ -78,8 +78,10 @@
                             <input id="btn-value" class="product__input" value="1" disabled/>
                             <button id="btn-minus" class="product__btn">-</button>
                         </div>
-                        <button class="product__btn product__btn_big">Добавить в корзину</button>
-                        <button class="product__btn product__btn_favorite"><img src="./assets/icons/favorite.svg" alt="favorite-button"></button>
+                        <div class="product__item">
+                            <button class="product__btn product__btn_big">Добавить в корзину</button>
+                            <button class="product__btn product__btn_favorite"><img src="./assets/icons/favorite.svg" alt="favorite-button"></button>
+                        </div>
                     </div>
                     <div class="product__parametrs">
                         <a href="#" class="fz-14 link">Купить в 1 клик</a>
@@ -203,25 +205,27 @@
     </div>
 
     <footer class="footer">
-        <div class="footer__wrapper">
-            <div class="footer__item">
-                <h2 class="fz-16 footer__title">покупателям</h2>
-                <a href="#" class="footer__link fz-14">Каталог</a>
-                <a href="#" class="footer__link fz-14">Акции</a>
-                <a href="#" class="footer__link fz-14">Бренды</a>
-            </div>
-            <div class="footer__item">
-                <h2 class="fz-16 footer__title">о нас</h2>
-                <a href="#" class="footer__link fz-14">О компании</a>
-                <a href="#" class="footer__link fz-14">Новости</a>
-                <a href="#" class="footer__link fz-14">Команда</a>
-            </div>
-            <div class="footer__item">
-                <h2 class="fz-16 footer__title">Узнайте первыми о новинках и акциях</h2>
-                <form action="#" class="footer__form">
-                    <input type="email" placeholder="Адрес электронной почты" class="footer__input">
-                    <button class="footer__button">Подписаться</button>
-                </form>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__item">
+                    <h2 class="fz-16 footer__title">покупателям</h2>
+                    <a href="#" class="footer__link fz-14">Каталог</a>
+                    <a href="#" class="footer__link fz-14">Акции</a>
+                    <a href="#" class="footer__link fz-14">Бренды</a>
+                </div>
+                <div class="footer__item">
+                    <h2 class="fz-16 footer__title">о нас</h2>
+                    <a href="#" class="footer__link fz-14">О компании</a>
+                    <a href="#" class="footer__link fz-14">Новости</a>
+                    <a href="#" class="footer__link fz-14">Команда</a>
+                </div>
+                <div class="footer__item">
+                    <h2 class="fz-16 footer__title">Узнайте первыми о новинках и акциях</h2>
+                    <form action="#" class="footer__form">
+                        <input type="email" placeholder="Адрес электронной почты" class="footer__input">
+                        <button class="footer__button">Подписаться</button>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
